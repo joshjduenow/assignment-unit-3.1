@@ -136,9 +136,12 @@ let firstGem = 'Topaz';
 gems.unshift(firstGem);
 console.log('Added topaz as first gem', gems);
 
+
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
-
+gems.sort();
+gems.reverse();
+console.log('Reverse order gems', gems);
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
@@ -147,7 +150,8 @@ console.log('Added topaz as first gem', gems);
 //       "Emerald and Diamond and Tourmaline and Topaz"
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
-
+let gemString = ['Topaz', 'Tourmaline', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
+console.log(gems.join(' and '));
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
@@ -155,8 +159,8 @@ console.log('Added topaz as first gem', gems);
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
-
-
+let colorfulGems = gems.concat(colors);
+console.log('colorful gems', colorfulGems);
 
 // DO NOT MODIFY
 // Used for automated testing
