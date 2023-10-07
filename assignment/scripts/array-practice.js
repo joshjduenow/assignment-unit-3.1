@@ -110,7 +110,9 @@ console.log('The animals are now', animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 orange = colors.shift(),
-console
+console.log('Removed first color', colors);
+let firstColor = orange;
+console.log('Added orange as first color', firstColor);
 
 
 
@@ -120,7 +122,12 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+Topaz = gems.shift(),
+console.log('Removed Topaz as first', gems);
+let Tourmaline = 'Tourmaline';
+gems.unshift(Tourmaline);
+let Topaz = gems;
+console.log('Added tourmaline as second gem', gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
