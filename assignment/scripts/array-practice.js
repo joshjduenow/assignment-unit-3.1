@@ -124,10 +124,17 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //      Remember to console.log the updated array.
 Topaz = gems.shift(),
 console.log('Removed Topaz as first', gems);
-let Tourmaline = 'Tourmaline';
-gems.unshift(Tourmaline);
-let Topaz = gems;
+
+Citrine = gems.shift(),
+console.log('Removed Citrine as second', gems);
+
+let secondGem = 'Tourmaline';
+gems.unshift(secondGem);
 console.log('Added tourmaline as second gem', gems);
+
+let firstGem = 'Topaz';
+gems.unshift(firstGem);
+console.log('Added topaz as first gem', gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
